@@ -12,7 +12,13 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.bookstore.service.impl.UserSecurityService;
+import com.bookstore.utility.SecurityUtility;
 
+/**
+ * 
+ * @author Manan
+ *
+ */
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled=true)

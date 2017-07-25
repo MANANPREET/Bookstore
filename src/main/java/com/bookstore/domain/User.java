@@ -24,6 +24,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  * @author Manan
  *
  */
+@SuppressWarnings("serial")
 @Entity
 public class User implements UserDetails{
 	@Id
