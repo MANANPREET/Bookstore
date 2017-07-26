@@ -19,12 +19,12 @@ public interface PasswordResetTokenRepository extends JpaRepository<PasswordRese
 
 		PasswordResetToken findByToken(String token);
 	
-		PasswordResetToken findyUser(User user);
+		PasswordResetToken findByUser(User user);
 		
 		Stream<PasswordResetToken> findAllByExpiryDateLessThan(Date now);
 		
 		@Modifying
-		@Query("Delete from PasswordResetToken t where t.expirydate <= ?1")
+		@Query("delete from PasswordResetToken t where t.expiryDate <= ?1")
 		void deleteAllExpiredSince(Date now);
 	
 }

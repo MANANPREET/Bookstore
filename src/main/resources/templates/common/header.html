@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+				xmlns:sec="http://www.w3.org/1999/xhtml">
 <head th:fragment="common-header">
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,8 +45,9 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">SHOPPING CART</a></li>
-					<li><a th:href="@{/login}">MY ACCOUNT</a></li>
-					<li><a href="#">LOGOUT</a></li>
+					<li><a sec:authorize="isAnonymous()" th:href="@{/login}">MY ACCOUNT</a></li>
+					<li><a sec:authorize="isAuthenticated()" th:href="@{/login}">MY ACCOUNT</a></li>
+					<li><a sec:authorize="isAuthenticated()" href="@{/logout}">LOGOUT</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->

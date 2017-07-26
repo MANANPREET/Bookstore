@@ -112,59 +112,6 @@
 							</div>
 						</div>
 					</div>
-
-					<!-- Login -->
-					<div class="tab-pane fade" id="tab-2"
-						th:classappend="${classActiveLogin}? 'in active'">
-						<div class="panel-group">
-							<div class="panel panel-default" style="border: none;">
-								<div class="panel-body"
-									style="background-color: #ededed; margin-top: 20px;">
-									<form>
-										<div class="form-group">
-											<label for="newUsername">* Username: </label> <input
-												required="required" type="text" class="form-control"
-												id="newUsername" name="username" />
-											<p style="color: #828282">Enter your username here.</p>
-										</div>
-
-										<div class="form-group">
-											<label for="password">* Password: </label> <input
-												required="required" type="password" class="form-control"
-												id="password" name="password" />
-											<p style="color: #828282">Enter the password accompanies
-												your username.</p>
-										</div>
-
-										<button type="submit" class="btn btn-primary">Log in</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Forget Password -->
-					<div class="tab-pane fade" id="tab-3"
-						th:classappend="${classActiveForgetPassword}? 'in active'">
-						<div class="panel-group">
-							<div class="panel panel-default" style="border: none;">
-								<div class="panel-body"
-									style="background-color: #ededed; margin-top: 20px;">
-									<form>
-										<div class="form-group">
-											<label for="recoverEmail">* Your Email: </label> <input
-												required="required" type="text" class="form-control"
-												id="recoverEmail" name="email" />
-											<p style="color: #828282">Enter your registered email
-												address here.</p>
-										</div>
-
-										<button type="submit" class="btn btn-primary">Submit</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
