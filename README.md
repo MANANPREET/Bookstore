@@ -8,3 +8,5 @@ In this project, I developed a fully functional online bookstore. This project h
 4) Shopping Cart
 5) Order checkout and order history
 6) Automatic email confirmation
+
+This Code is originally written by MANANPREET on GitHub.
